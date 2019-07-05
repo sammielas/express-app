@@ -1,0 +1,52 @@
+[
+  {
+    "booking_id": 1,
+    "first_name": "Adelice",
+    "last_name": "Lokier",
+    "email": "alokier0@cbsnews.com",
+    "gender": "Female",
+    "category": "admin",
+    "admin_id": 21,
+    "user_id": null
+  },
+  {
+    "booking_id": 2,
+    "first_name": "Kurt",
+    "last_name": "Clemetts",
+    "email": "kclemetts1@yahoo.com",
+    "gender": "Male",
+    "category": "user",
+    "admin_id": null,
+    "user_id": 52
+  },
+  {
+    "booking_id": 3,
+    "first_name": "Delly",
+    "last_name": "Millhill",
+    "email": "dmillhill2@artisteer.com",
+    "gender": "Female",
+    "category": "user",
+    "admin_id": null,
+    "user_id": 53
+  },
+  {
+    "booking_id": 4,
+    "first_name": "Joni",
+    "last_name": "Checchi",
+    "email": "jchecchi3@cbslocal.com",
+    "gender": "Female",
+    "category": "user",
+    "admin_id": null,
+    "user_id": 54
+  },
+  {
+    "booking_id": 5,
+    "first_name": "Kaitlin",
+    "last_name": "Zini",
+    "email": "kzini4@skyrock.com",
+    "gender": "Female",
+    "category": "admin",
+    "admin_id": 25,
+    "user_id": null
+  }
+]

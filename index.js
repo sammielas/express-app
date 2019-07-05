@@ -7,10 +7,25 @@ const app = express();
 
 app.use(express.static('public'));
 app.use('/images', express.static('images'));
+
 // publish all data
-app.get('/', (req, res) => {
+app.route('/')
+.get( (req, res) => {
+
+  //res.end();
+  //res.redirect('http://www.google.com');
   res.json(data);
+})
+.put((req, res) => {
+  res.send(`Handler for put on route /`);
 });
+
+// publish image
+app.get('/images', (req, res) => {
+  res.download('images/Greenshot.png');
+  
+});
+
 //publish specific data
 app.get('/v1/item/:admin_id', (req, res, next) => {
   console.log(req.params.admin_id);
@@ -23,9 +38,7 @@ app.get('/v1/item/:admin_id', (req, res, next) => {
     console.log('Did you get the right data?');
   }
 );
-app.post('/newItem', (req, res) => {
-  res.send(`Handler for post on route /newItem`);
-});
+
 
 app.listen(PORT, () => {
   console.log(` This app is listening on PORT:${PORT}`);
